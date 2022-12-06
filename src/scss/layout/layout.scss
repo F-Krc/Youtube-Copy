@@ -9,58 +9,72 @@ body {
 header nav {
   @include flex-setup-row();
   @include box-size(100%, 5rem);
-  .logo{
+  .logo {
     display: flex;
     align-items: center;
-     img {
-    height: 4rem;
-    padding-left: 1rem;
+    img {
+      height: 4rem;
+      padding-left: 1rem;
+    }
   }
-  }
- .search{
-  display: flex;
-  align-items: center;
-  .search_form{
+  .search {
     display: flex;
     align-items: center;
-    padding-right: 4rem;
-    input{
-    @include box-size(40rem, 3rem);
-    
+
+    .search_form {
+      border: 1px solid black;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      margin-right: 4rem;
+      input {
+        border-radius: 25px 0 0 25px;
+        @include box-size(40rem, 3rem);
+        border: none;
+        font-size: 1.6rem;
+        padding-left: 2rem;
+      }
+      .search_icon {
+        @include box-size(5rem, 3rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightgrey;
+        border-radius: 0 25px 25px 0;
+      }
+    }
   }
-  .search_icon{
-    @include box-size(5rem, 3rem);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    background-color: lightblue;
-  }
-  }
-  
- }
 }
 section {
- display: flex;
+  display: flex;
 
   aside {
     @include flex-setup-column();
     width: 25rem;
-    
-    div{margin-top: 5rem;
-        padding: 1rem 0;
-        border-bottom: 2px solid black;
-       img {
-      width: 2.4rem;
-    }
-    
-    ul {
-      li {
-        padding-left: 1rem;
+
+    div {
+      margin-top: 5rem;
+      padding: 1rem 0;
+      border-bottom: 2px solid black;
+      img {
+        width: 2.8rem;
       }
-    } 
+
+      ul {
+        li {
+          padding: .6rem;
+          a{
+            color: $primary-color;
+            i{
+              margin-right: .5rem;
+            }
+            img{
+              margin-right: .5rem;
+            }
+          }
+        }
+      }
     }
-    
   }
 
   main {
@@ -74,12 +88,12 @@ section {
         position: relative;
         background-color: rgb(16, 14, 14);
         @include box-size(100%, 22rem);
-        .banner{
-          img{
-          @include box-size(100%, 22rem);
+        .banner {
+          img {
+            @include box-size(100%, 22rem);
+          }
         }
-        }
-        
+
         .main_banner_icons {
           z-index: 1;
           ul {
@@ -90,7 +104,7 @@ section {
             li {
               padding-right: 1rem;
               font-size: 1.7rem;
-              
+
               a {
                 color: white;
                 img {
@@ -116,9 +130,16 @@ section {
         .header_nav_menu {
           ul {
             @include flex-setup-row();
+            li{
+              a{
+                font-size: 1.6rem;
+                color: $primary-color;
+              }
+            }
           }
         }
       }
     }
+
   }
 }

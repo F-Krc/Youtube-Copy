@@ -51,13 +51,19 @@ header nav .search {
   align-items: center;
 }
 header nav .search .search_form {
+  border: 1px solid black;
+  border-radius: 25px;
   display: flex;
   align-items: center;
-  padding-right: 4rem;
+  margin-right: 4rem;
 }
 header nav .search .search_form input {
+  border-radius: 25px 0 0 25px;
   width: 40rem;
   height: 3rem;
+  border: none;
+  font-size: 1.6rem;
+  padding-left: 2rem;
 }
 header nav .search .search_form .search_icon {
   width: 5rem;
@@ -65,8 +71,8 @@ header nav .search .search_form .search_icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
-  background-color: lightblue;
+  background-color: lightgrey;
+  border-radius: 0 25px 25px 0;
 }
 
 section {
@@ -83,10 +89,19 @@ section aside div {
   border-bottom: 2px solid black;
 }
 section aside div img {
-  width: 2.4rem;
+  width: 2.8rem;
 }
 section aside div ul li {
-  padding-left: 1rem;
+  padding: 0.6rem;
+}
+section aside div ul li a {
+  color: black;
+}
+section aside div ul li a i {
+  margin-right: 0.5rem;
+}
+section aside div ul li a img {
+  margin-right: 0.5rem;
 }
 section main {
   display: flex;
@@ -146,6 +161,10 @@ section main .main_header .main_header_navbar .header_nav_menu ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+section main .main_header .main_header_navbar .header_nav_menu ul li a {
+  font-size: 1.6rem;
+  color: black;
 }
 
 /*# sourceMappingURL=layout.css.map */
