@@ -9,9 +9,36 @@ body {
 header nav {
   @include flex-setup-row();
   @include box-size(100%, 5rem);
-  img {
-    width: 40%;
+  .logo{
+    display: flex;
+    align-items: center;
+     img {
+    height: 4rem;
+    padding-left: 1rem;
   }
+  }
+ .search{
+  display: flex;
+  align-items: center;
+  .search_form{
+    display: flex;
+    align-items: center;
+    padding-right: 4rem;
+    input{
+    @include box-size(40rem, 3rem);
+    
+  }
+  .search_icon{
+    @include box-size(5rem, 3rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: lightblue;
+  }
+  }
+  
+ }
 }
 section {
  display: flex;
@@ -45,25 +72,29 @@ section {
 
       .main_banner {
         position: relative;
-        background-image: url("../../images/banner.png");
         background-color: rgb(16, 14, 14);
-        @include box-size(100%, 26rem);
-        background-repeat: no-repeat;
-        background-image: center cover/center;
+        @include box-size(100%, 22rem);
+        .banner{
+          img{
+          @include box-size(100%, 22rem);
+        }
+        }
+        
         .main_banner_icons {
-          z-index: 2;
+          z-index: 1;
           ul {
             display: flex;
             position: absolute;
             right: 2rem;
-            bottom: 2rem;
+            bottom: 1rem;
             li {
               padding-right: 1rem;
-              font-size: 2.3rem;
-              text-align: center;
+              font-size: 1.7rem;
+              
               a {
+                color: white;
                 img {
-                  width: 2.6rem;
+                  width: 2rem;
                 }
               }
             }
