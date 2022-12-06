@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-size: 2rem;
+  background-color: white;
+  padding: 0 2rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+}
+header nav img {
+  width: 40%;
+}
+
+section {
+  display: flex;
+}
+section aside {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+}
+section aside div {
+  margin-top: 5rem;
+  padding: 1rem 0;
+  border-bottom: 2px solid black;
+}
+section aside div img {
+  width: 2.4rem;
+}
+section aside div ul li {
+  padding-left: 1rem;
+}
+section main {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 5rem);
+  height: calc(100vh - 25rem);
+}
+section main .main_header {
+  display: flex;
+  flex-direction: column;
+}
+section main .main_header .main_banner {
+  position: relative;
+  background-image: url("../../images/banner.png");
+  background-color: rgb(16, 14, 14);
+  width: 100%;
+  height: 26rem;
+  background-repeat: no-repeat;
+  background-image: center cover/center;
+}
+section main .main_header .main_banner .main_banner_icons {
+  z-index: 2;
+}
+section main .main_header .main_banner .main_banner_icons ul {
+  display: flex;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+section main .main_header .main_banner .main_banner_icons ul li {
+  padding-right: 1rem;
+  font-size: 2.3rem;
+  text-align: center;
+}
+section main .main_header .main_banner .main_banner_icons ul li a img {
+  width: 2.6rem;
+}
+section main .main_header .main_header_navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 10rem;
+}
+section main .main_header .main_header_navbar .header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section main .main_header .main_header_navbar .header_nav img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+section main .main_header .main_header_navbar .header_nav_menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=layout.css.map */
