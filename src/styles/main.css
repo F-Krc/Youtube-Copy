@@ -26,7 +26,7 @@ img {
 }
 
 body {
-  font-size: 2rem;
+  font-size: 1.6rem;
   background-color: white;
   padding: 0 2rem;
 }
@@ -85,8 +85,7 @@ section aside {
 }
 section aside div {
   margin-top: 5rem;
-  padding: 1rem 0;
-  border-bottom: 2px solid black;
+  padding: 1rem 0.6rem;
 }
 section aside div img {
   width: 2.8rem;
@@ -102,6 +101,9 @@ section aside div ul li a i {
 }
 section aside div ul li a img {
   margin-right: 0.5rem;
+}
+section aside div hr {
+  border-top: 2px solid gray;
 }
 section main {
   display: flex;
@@ -165,6 +167,34 @@ section main .main_header .main_header_navbar .header_nav_menu ul {
 section main .main_header .main_header_navbar .header_nav_menu ul li a {
   font-size: 1.6rem;
   color: black;
+}
+section main .main_content .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+section main .main_content .cards .card {
+  width: 25rem;
+  height: 25rem;
+  padding: 0.8rem;
+}
+section main .main_content .cards .card .card_image {
+  position: relative;
+}
+section main .main_content .cards .card .card_image img {
+  width: 100%;
+  border-radius: 5px;
+}
+section main .main_content .cards .card .card_image span {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.4rem;
+  width: 5rem;
+  background-color: black;
+  bottom: 0.6rem;
+  right: 0.6rem;
+  color: white;
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=main.css.map */
