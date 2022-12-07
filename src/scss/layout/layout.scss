@@ -1,9 +1,6 @@
-@import "../reset/reset.scss";
-@import "../variables/variables.scss";
-@import "../mixins/mixins.scss";
 body {
   font-size: 2rem;
-  background-color: white;
+  background-color: $body-bg;
   padding: 0 2rem;
 }
 header nav {
