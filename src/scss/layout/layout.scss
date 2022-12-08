@@ -39,7 +39,24 @@ header nav {
         background-color: lightgrey;
         border-radius: 0 25px 25px 0;
       }
+      
+    }.mic_icon{
+        @include box-size(3rem, 3rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightgrey;
+        border-radius: 50%;
+      }
+  }
+  .icons{
+    display: flex;
+    align-items: center;
+        justify-content: center;
+    i{
+      padding: 1rem;
     }
+    
   }
 }
 section {
