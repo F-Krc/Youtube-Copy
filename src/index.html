@@ -22,7 +22,7 @@
     <header>
       <nav>
         <div class="logo">
-         <a href=""> <i class="fa-solid fa-bars"></i></a>
+         <a href=""> <i class="fa-solid fa-bars hamburger"></i></a>
           <a href=""><img src="./images/logo.png" alt="" /></a>
         </div>
         <div class="search">
@@ -51,7 +51,8 @@ video_call
     </header>
     <section>
       <aside>
-        <div class="aside_nav">
+        <div class="sidebar">
+          <div class="aside_nav">
           <ul>
             <li>
               <a href=""><i class="fa-solid fa-house"></i> Home</a>
@@ -67,9 +68,9 @@ video_call
               >
             </li>
           </ul> <hr>
-        </div>
+          </div>
        
-        <div class="user_menu">
+          <div class="user_menu">
           <ul>
             <li>
               <a href=""
@@ -98,9 +99,9 @@ video_call
               <a href=""><i class="fa-solid fa-chevron-down"></i> Show more</a>
             </li>
           </ul><hr>
-        </div>
+          </div>
         
-        <div class="subscriptions">
+          <div class="subscriptions">
           <ul>
             <li>
               <a href=""> <i class="fa-solid fa-user"></i>DW Dokumantary</a>
@@ -129,6 +130,29 @@ video_call
               >
             </li>
           </ul><hr>
+          </div>
+        </div>
+        <div class="sidebar_mini">
+          <ul>
+            <li>
+              <span class="material-symbols-outlined">
+home
+</span> <span class="link_name">Home</span>
+            </li>
+            <li><span class="material-symbols-outlined">
+slow_motion_video
+</span> <span class="link_name">Shorts</span></li>
+            <li><span class="material-symbols-outlined">
+subscriptions
+</span><span class="link_name">Subscriptions</span></li>
+            <li><span class="material-symbols-outlined">
+video_library
+</span><span class="link_name">Library</span></li>
+            <li><span class="material-symbols-outlined">
+history
+</span><span class="link_name">History</span></li>
+          </ul>
+
         </div>
       </aside>
       <main>
@@ -171,6 +195,14 @@ video_call
                 <li>
                   <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                 </li>
+              </ul>
+            </div>
+            <div class="header_nav_menu_mini">
+              <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">VIDEOS</a></li>
+                <li><a href="">SHORTS</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i></a></li>
               </ul>
             </div>
           </div>
@@ -302,5 +334,17 @@ video_call
         </div>
       </main>
     </section>
+     <!-- <script>
+      let clicked = false;
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        clicked = !clicked;
+        if (clicked) {
+          document.querySelector(".sidebar").style.cssText = "display:block;";
+          
+        } else {
+          document.querySelector(".sidebar").style.cssText = "display:none;";
+        }
+      });
+    </script> -->
   </body>
 </html>
