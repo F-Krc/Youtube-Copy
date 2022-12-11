@@ -165,11 +165,15 @@ section main .main_header .main_banner {
   position: relative;
   background-color: rgb(16, 14, 14);
   width: 100%;
-  height: 22rem;
+  height: 15vw;
+}
+section main .main_header .main_banner .banner {
+  max-height: 22rem;
 }
 section main .main_header .main_banner .banner img {
   width: 100%;
-  height: 22rem;
+  height: 15vw;
+  background-position: cover;
 }
 section main .main_header .main_banner .main_banner_icons {
   z-index: 1;
@@ -340,6 +344,9 @@ section main .main_content .cards .card .card_content p {
   }
   section main .main_header .main_header_navbar {
     padding: 2rem;
+  }
+  section main .main_header .main_banner .main_banner_icons {
+    display: none;
   }
 }
 @media (max-width: 520px) {

@@ -139,10 +139,12 @@ section {
       .main_banner {
         position: relative;
         background-color: rgb(16, 14, 14);
-        @include box-size(100%, 22rem);
-        .banner {
+        @include box-size(100%, 15vw);
+        
+        .banner {  max-height: 22rem;
           img {
-            @include box-size(100%, 22rem);
+           @include box-size(100%, 15vw);
+            background-position: cover;
           }
         }
         //banner icons (social media)
@@ -344,6 +346,11 @@ section {
       .main_header {
         .main_header_navbar {
           padding: 2rem;
+        }
+        .main_banner{
+          .main_banner_icons{
+            display: none;
+          }
         }
       }
     }
