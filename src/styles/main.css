@@ -118,6 +118,8 @@ section aside .sidebar div ul li {
 section aside .sidebar div ul li:hover {
   background-color: lightgrey;
   border-radius: 3px;
+  transition: all 0.8s ease-in;
+  transform: scale(1);
 }
 section aside .sidebar div ul li a {
   color: black;
@@ -146,6 +148,9 @@ section aside .sidebar_mini ul li {
 section aside .sidebar_mini ul li:hover {
   background-color: lightgrey;
   border-radius: 3px;
+  transition: all 0.8s ease-in;
+  transform: scale(1);
+  cursor: pointer;
 }
 section aside .sidebar_mini ul li span.link_name {
   margin-top: 1rem;
