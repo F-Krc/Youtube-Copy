@@ -117,6 +117,7 @@ section aside .sidebar div {
 }
 section aside .sidebar div ul li {
   padding: 0.8rem;
+  line-height: 2.5rem;
 }
 section aside .sidebar div ul li:hover {
   background-color: lightgrey;
@@ -146,7 +147,7 @@ section aside .sidebar_mini ul li {
   align-items: center;
   margin-top: 3rem;
   width: 8rem;
-  height: 5.5rem;
+  height: 5rem;
 }
 section aside .sidebar_mini ul li:hover {
   background-color: lightgrey;

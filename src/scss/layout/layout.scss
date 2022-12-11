@@ -90,6 +90,7 @@ section {
         ul {
           li {
             padding: 0.8rem;
+            line-height: 2.5rem;
             
             &:hover {
               background-color: lightgrey;
@@ -121,7 +122,7 @@ section {
           align-items: center;
           margin-top: 3rem;
           width: 8rem;
-          height: 5.5rem;
+          height: 5rem;
           &:hover {
             background-color: lightgrey;
             border-radius: 3px;
