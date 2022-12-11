@@ -6,6 +6,8 @@
 
 html {
   font-size: 10px;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 600;
 }
 
 body {
@@ -130,6 +132,9 @@ section aside .sidebar div hr {
 section aside .sidebar_mini {
   display: none;
 }
+section aside .sidebar_mini ul {
+  margin-right: 0.5rem;
+}
 section aside .sidebar_mini ul li {
   display: flex;
   flex-direction: column;
@@ -181,6 +186,8 @@ section main .main_header .main_banner .main_banner_icons ul li {
 }
 section main .main_header .main_banner .main_banner_icons ul li a {
   color: white;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
 section main .main_header .main_banner .main_banner_icons ul li a img {
   width: 2rem;
@@ -213,6 +220,9 @@ section main .main_header .main_header_navbar .header_nav .header_nav_avatar .he
 section main .main_header .main_header_navbar .header_nav .header_nav_avatar .header_avatar_content h4 {
   margin-bottom: 1rem;
 }
+section main .main_header .main_header_navbar .header_nav .header_nav_avatar .header_avatar_content span {
+  font-weight: 400;
+}
 section main .main_header .main_header_navbar .header_nav .header_nav_bttn button {
   height: 3rem;
   width: 10rem;
@@ -223,7 +233,7 @@ section main .main_header .main_header_navbar .header_nav .header_nav_bttn butto
   font-weight: 700;
 }
 section main .main_header .main_header_navbar .header_nav .header_nav_bttn button:hover {
-  opacity: 0.7;
+  opacity: 0.6;
   cursor: pointer;
 }
 section main .main_header .main_header_navbar .header_nav_menu ul {
@@ -234,6 +244,10 @@ section main .main_header .main_header_navbar .header_nav_menu ul {
 section main .main_header .main_header_navbar .header_nav_menu ul li a {
   font-size: 1.6rem;
   color: black;
+  opacity: 0.7;
+}
+section main .main_header .main_header_navbar .header_nav_menu ul li a:hover {
+  opacity: 1;
 }
 section main .main_header .main_header_navbar .header_nav_menu_mini {
   display: none;
@@ -279,6 +293,11 @@ section main .main_content .cards .card .card_image span {
   color: white;
   font-weight: 800;
 }
+section main .main_content .cards .card .card_content p {
+  color: gray;
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
 
 @media (max-width: 1025px) {
   header nav {
@@ -306,6 +325,14 @@ section main .main_content .cards .card .card_image span {
   section main .main_header .main_header_navbar .header_nav_menu_mini {
     display: block;
   }
+  section main .main_header .main_header_navbar .header_nav_menu_mini a {
+    font-size: 1.6rem;
+    color: black;
+    opacity: 0.7;
+  }
+  section main .main_header .main_header_navbar .header_nav_menu_mini a:hover {
+    opacity: 1;
+  }
 }
 @media (max-width: 768px) {
   header nav .search {
@@ -313,6 +340,27 @@ section main .main_content .cards .card .card_image span {
   }
   section main .main_header .main_header_navbar {
     padding: 2rem;
+  }
+}
+@media (max-width: 520px) {
+  header nav {
+    padding: 0 1rem;
+  }
+  section aside {
+    display: none;
+  }
+  section main .main_header .main_header_navbar .header_nav {
+    display: flex;
+    flex-direction: column;
+  }
+  section main .main_content {
+    text-align: center;
+  }
+  section main .main_content .cards {
+    justify-content: center;
+  }
+  section main .main_content .cards .card {
+    height: 22rem;
   }
 }
 

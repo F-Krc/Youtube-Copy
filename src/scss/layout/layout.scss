@@ -109,6 +109,7 @@ section {
     .sidebar_mini {
       display: none;
       ul {
+        margin-right: .5rem;;
         li {
           @include flex-setup-column();
           align-items: center;
@@ -158,6 +159,8 @@ section {
 
               a {
                 color: white;
+                font-weight: 400;
+                font-size: 1.4rem;
                 img {
                   width: 2rem;
                 }
@@ -187,6 +190,9 @@ section {
               h4 {
                 margin-bottom: 1rem;
               }
+              span{
+                font-weight: 400;
+              }
             }
           }
           .header_nav_bttn {
@@ -199,7 +205,7 @@ section {
               color: white;
               font-weight: 700;
               &:hover {
-                opacity: 0.7;
+                opacity: 0.6;
                 cursor: pointer;
               }
             }
@@ -213,6 +219,10 @@ section {
               a {
                 font-size: 1.6rem;
                 color: $primary-color;
+                opacity: .7;
+                &:hover{
+                  opacity: 1;
+                }
               }
             }
           }
@@ -264,11 +274,20 @@ section {
               font-weight: 800;
             }
           }
+          .card_content{
+            p{
+              color: gray;
+              margin-top: .5rem;
+              font-weight: 400;
+            }
+          }
         }
       }
     }
   }
 }
+
+// media query
 @media (max-width: 1025px) {
   header nav {
     padding: 0 3rem;
@@ -300,6 +319,14 @@ section {
           }
           .header_nav_menu_mini {
             display: block;
+             a {
+                font-size: 1.6rem;
+                color: $primary-color;
+                opacity: .7;
+                &:hover{
+                  opacity: 1;
+                }
+              }
           }
         }
       }
@@ -318,6 +345,35 @@ section {
         .main_header_navbar {
           padding: 2rem;
         }
+      }
+    }
+  }
+}
+@media (max-width: 520px) {
+  header nav {
+    padding: 0 1rem;
+  }
+  section {
+    aside {
+      display: none;
+    }
+    main {
+      .main_header {
+        .main_header_navbar {
+          .header_nav {
+            @include flex-setup-column();
+          }
+        }
+      }
+      .main_content{
+        text-align: center;
+        .cards{
+          justify-content: center;
+          .card{
+            height: 22rem;
+          }
+        }
+       
       }
     }
   }
