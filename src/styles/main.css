@@ -50,6 +50,8 @@ header nav .logo img {
 header nav .search {
   display: flex;
   align-items: center;
+  width: 50rem;
+  height: 3rem;
 }
 header nav .search .search_form {
   border: 1px solid black;
@@ -280,10 +282,17 @@ section main .main_content .cards .card .card_image span {
 
 @media (max-width: 1025px) {
   header nav {
-    padding: 3rem;
+    padding: 0 3rem;
+  }
+  header nav .search {
+    width: 32rem;
   }
   header nav .search .search_form {
-    display: none;
+    margin-right: 1rem;
+  }
+  header nav .search .search_form input {
+    width: 22rem;
+    padding-left: 1rem;
   }
   section aside .sidebar {
     display: none;
@@ -299,6 +308,9 @@ section main .main_content .cards .card .card_image span {
   }
 }
 @media (max-width: 768px) {
+  header nav .search {
+    display: none;
+  }
   section main .main_header .main_header_navbar {
     padding: 2rem;
   }

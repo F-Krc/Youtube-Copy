@@ -7,7 +7,7 @@ body {
 header nav {
   @include flex-setup-row();
   @include box-size(100%, 5rem);
-padding: 2rem;
+  padding: 2rem;
   //logo and hamburger menu
   .logo {
     display: flex;
@@ -22,7 +22,7 @@ padding: 2rem;
   .search {
     display: flex;
     align-items: center;
-
+    @include box-size(50rem, 3rem);
     .search_form {
       border: 1px solid black;
       border-radius: 25px;
@@ -73,7 +73,7 @@ padding: 2rem;
 //section
 section {
   display: flex;
-//sidebar
+  //sidebar
   aside {
     //sidebar desktop
     .sidebar {
@@ -106,36 +106,35 @@ section {
       }
     }
     //responsive sidebar
-    .sidebar_mini{
+    .sidebar_mini {
       display: none;
-      ul{
-        li{
+      ul {
+        li {
           @include flex-setup-column();
           align-items: center;
           margin-top: 3rem;
           width: 8rem;
           height: 5.5rem;
-          &:hover{
+          &:hover {
             background-color: lightgrey;
             border-radius: 3px;
           }
-          span.link_name{
+          span.link_name {
             margin-top: 1rem;
-           font-size: 1.2rem;
+            font-size: 1.2rem;
           }
         }
       }
-       
     }
   }
   //main
   main {
     @include flex-setup-column();
     @include box-size(calc(100vw - 5rem), calc(100vh - 25rem));
-//main header
+    //main header
     .main_header {
       @include flex-setup-column();
-//main banner image
+      //main banner image
       .main_banner {
         position: relative;
         background-color: rgb(16, 14, 14);
@@ -145,7 +144,7 @@ section {
             @include box-size(100%, 22rem);
           }
         }
-//banner icons (social media)
+        //banner icons (social media)
         .main_banner_icons {
           z-index: 1;
           ul {
@@ -167,7 +166,7 @@ section {
           }
         }
       }
-//main header navigation
+      //main header navigation
       .main_header_navbar {
         @include flex-setup-column();
         padding: 1rem 10rem;
@@ -219,7 +218,7 @@ section {
           }
         }
         //header menu responsive
-        .header_nav_menu_mini{
+        .header_nav_menu_mini {
           display: none;
           ul {
             @include flex-setup-row();
@@ -271,46 +270,55 @@ section {
   }
 }
 @media (max-width: 1025px) {
-  header nav{
-    padding: 3rem;
-    .search{
-      .search_form{
+  header nav {
+    padding: 0 3rem;
+    .search {
+      width: 32rem;
+      .search_form {
+        margin-right: 1rem;
+        input {
+          width: 22rem;
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+  section {
+    aside {
+      .sidebar {
         display: none;
       }
+      .sidebar_mini {
+        display: block;
+      }
     }
-  }
-  section{
-     aside{
-    .sidebar{
-      display: none;
-  }
-  .sidebar_mini{
-    display: block;
-  }
-  }
-  main{
-    .main_header{
-      .main_header_navbar{
-        .header_nav_menu{
-          display: none;
-        }
-        .header_nav_menu_mini{
-          display: block;
+    main {
+      .main_header {
+        .main_header_navbar {
+          .header_nav_menu {
+            display: none;
+          }
+          .header_nav_menu_mini {
+            display: block;
+          }
         }
       }
     }
-
-  }
   }
 }
 @media (max-width: 768px) {
-  section{
-    main{
-    .main_header{
-      .main_header_navbar{
-        padding: 2rem;
-      }
+  header nav {
+    .search {
+      display: none;
     }
   }
+  section {
+    main {
+      .main_header {
+        .main_header_navbar {
+          padding: 2rem;
+        }
+      }
+    }
   }
 }
