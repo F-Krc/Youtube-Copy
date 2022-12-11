@@ -88,6 +88,9 @@ header nav .search .mic_icon {
   background-color: lightgrey;
   border-radius: 50%;
 }
+header nav .search_icon_resp {
+  display: none;
+}
 header nav .icons ul {
   display: flex;
   align-items: center;
@@ -352,6 +355,10 @@ section main .main_content .cards .card .card_content p {
 @media (max-width: 768px) {
   header nav .search {
     display: none;
+  }
+  header nav .search_icon_resp {
+    display: block;
+    font-size: 2rem;
   }
   section main .main_header .main_header_navbar {
     padding: 2rem;

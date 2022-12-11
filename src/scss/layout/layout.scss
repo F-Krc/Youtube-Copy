@@ -54,7 +54,10 @@ header nav {
       border-radius: 50%;
     }
   }
-
+  // search icon responsive
+  .search_icon_resp{
+    display: none;
+  }
   //icons and login
   .icons {
     ul {
@@ -349,6 +352,10 @@ section {
   header nav {
     .search {
       display: none;
+    }
+    .search_icon_resp{
+      display: block;
+      font-size: 2rem;
     }
   }
   section {
