@@ -273,6 +273,12 @@ section main .main_header .main_header_navbar .header_nav_menu_mini ul li a {
   font-size: 1.4rem;
   color: black;
 }
+section main hr {
+  border: 1px solid gray;
+}
+section main .main_content {
+  padding: 0.5rem 1.6rem;
+}
 section main .main_content .cards {
   display: flex;
   flex-wrap: wrap;
