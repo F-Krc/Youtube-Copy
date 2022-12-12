@@ -353,6 +353,9 @@ section {
   header nav {
     .search {
       display: none;
+      position: absolute;
+      top: 5rem;
+      left: calc(50% - 15rem);
     }
     .search_icon_resp{
       display: block;
@@ -360,6 +363,7 @@ section {
     }
   }
   section {
+    margin-top: 4rem;
     main {
       .main_header {
         .main_header_navbar {
@@ -375,9 +379,10 @@ section {
   }
 }
 @media (max-width: 520px) {
-  header nav {
+   header nav {
     padding: 0 1rem;
   }
+  
   section {
     aside {
       display: none;

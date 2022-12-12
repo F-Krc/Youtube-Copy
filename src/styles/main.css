@@ -356,10 +356,16 @@ section main .main_content .cards .card .card_content p {
 @media (max-width: 768px) {
   header nav .search {
     display: none;
+    position: absolute;
+    top: 5rem;
+    left: calc(50% - 15rem);
   }
   header nav .search_icon_resp {
     display: block;
     font-size: 2rem;
+  }
+  section {
+    margin-top: 4rem;
   }
   section main .main_header .main_header_navbar {
     padding: 2rem;
